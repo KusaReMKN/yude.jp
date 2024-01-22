@@ -5,7 +5,7 @@ export default function Keys() {
             <h1 className="text-2xl text-center">Public keys</h1>
             <div className="border border-white-500"></div>
 
-            <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1">GNU Privacy Guard</h2>
+            <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">GNU Privacy Guard</h2>
             <ul className="max-w-md space-y-1 list-disc list-inside text-gray-300 ml-5">
                 <li>
                     Available on <a className="underline" href="https://github.com/yude.gpg">GitHub</a>.
@@ -15,7 +15,7 @@ export default function Keys() {
                 </li>
             </ul>
 
-            <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1">The Secure Shell (RFC4716)</h2>
+            <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">The Secure Shell (RFC4716)</h2>
             <ul className="max-w-md space-y-1 list-disc list-inside text-gray-300 ml-5">
                 <li>
                     Available on <a className="underline" href="https://github.com/yude.keys">GitHub</a>.

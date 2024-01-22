@@ -8,7 +8,7 @@ export default function Profile() {
             <h1 className="text-2xl text-center">Profile</h1>
             <div className="border border-white-500"></div>
 
-            <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1">Affiliation</h2>
+            <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">Affiliation</h2>
 
             <ol className="relative border-s border-gray-700 left-2">                  
                 <li className="mb-2 ms-4">
@@ -47,7 +47,7 @@ export default function Profile() {
                 </li>
             </ol>
 
-            <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1">Biography</h2>
+            <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">Biography</h2>
             
             <ul className="space-y-1 list-inside mt-2 ml-5">
                 <li className="items-center">
@@ -58,7 +58,7 @@ export default function Profile() {
                 </li>
             </ul>
 
-            <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1">Certification</h2>
+            <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">Certification</h2>
             <ul className="max-w-md space-y-1 ml-5 list-disc list-inside text-gray-400">
                 <li>
                     IPA 基本情報技術者 (April 2022)
