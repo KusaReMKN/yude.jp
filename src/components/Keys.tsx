@@ -20,9 +20,6 @@ export default function Keys() {
                 <li>
                     Available on <a className="underline" href="https://github.com/yude.keys">GitHub</a>.
                 </li>
-                <li>
-                    Fingerprint: <code>XEGJhmO6p0qu7C04gvtyJz5BHuIVUKOUIBqZDoSes0k</code> (SHA-256, Primary key)
-                </li>
             </ul>
             
         </div>
