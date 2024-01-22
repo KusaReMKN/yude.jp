@@ -4,7 +4,7 @@ import { faCake, faMapPin } from '@fortawesome/free-solid-svg-icons'
 export default function Profile() {
     return (
         <>
-        <div className="p-5 rounded-lg">
+        <div className="p-5 rounded-lg max-w-2xl">
             <h1 className="text-2xl text-center">Profile</h1>
             <div className="border border-white-500"></div>
 
@@ -13,15 +13,37 @@ export default function Profile() {
             <ol className="relative border-s border-gray-700 left-2">                  
                 <li className="mb-2 ms-4">
                     <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
-                    <time className="mb-1 text-sm font-normal leading-none text-gray-400">April 2020 - Present</time>
-                    <h3 className="text-lg font-semibold text-white">Hiroshima City University</h3>
-                    <p className="text-base font-normal text-gray-400">Department of Computer and Network Engineering, Faculty of Information Sciences</p>
+                    <time className="mb-1 text-sm font-normal leading-none text-gray-400">
+                        April 2020 - Present
+                    </time>
+                    <h3 className="text-lg font-semibold text-white">
+                        <a href="https://www.hiroshima-cu.ac.jp">
+                            Hiroshima City University
+                        </a>
+                    </h3>
+                    <p className="text-base font-normal text-gray-400">
+                        <a href="https://net.info.hiroshima-cu.ac.jp">
+                            Information Network Laboratory
+                        </a>
+                    </p>
+                    <p className="text-base font-normal text-gray-400">
+                        <a href="https://funahcu.github.io/funalab">
+                            Lectureship of Sensing, Network Software
+                        </a>
+                    </p>
+                    <p className="text-base font-normal text-gray-400">
+                        <a href="http://www.cne.info.hiroshima-cu.ac.jp/">
+                            Department of Computer and Network Engineering,
+                        </a>
+                        &nbsp;
+                        <a href="https://www2.info.hiroshima-cu.ac.jp/">Faculty of Information Sciences</a>
+                    </p>
                 </li>
                 <li className="ms-4">
                     <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
                     <time className="mb-1 text-sm font-normal leading-none text-gray-400">April 2017 - March 2020</time>
                     <h3 className="text-lg font-semibold text-white">Tottori Prefectural, Tottori East High School</h3>
-                    <p className="text-base font-normal text-gray-400">Diploma of Science and Mathimatics</p>
+                    <p className="text-base font-normal text-gray-400">Diploma of Science and Mathematics</p>
                 </li>
             </ol>
 
