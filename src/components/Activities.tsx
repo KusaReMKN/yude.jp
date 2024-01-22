@@ -41,7 +41,7 @@ export default function Activities() {
                     </time>
                     <h3 className="text-lg font-semibold text-white">
                         <a href="https://www.iij.ad.jp/">
-                            Intern @ Internet Initiative Japan Inc.
+                            Internship @ Internet Initiative Japan Inc.
                         </a>
                     </h3>
                     <p className="text-base font-normal text-gray-400">
@@ -55,7 +55,7 @@ export default function Activities() {
                     </time>
                     <h3 className="text-lg font-semibold text-white">
                         <a href="https://www.hirotec.co.jp/">
-                            Intern @ HIROTEC Corporation.
+                            Internship @ HIROTEC Corporation.
                         </a>
                     </h3>
                 </li>
