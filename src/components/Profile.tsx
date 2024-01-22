@@ -49,7 +49,7 @@ export default function Profile() {
 
             <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1">Biography</h2>
             
-            <ul className="space-y-1 list-inside mt-2">
+            <ul className="space-y-1 list-inside mt-2 ml-5">
                 <li className="items-center">
                     <span className="text-gray-300"><FontAwesomeIcon icon={faCake} />&nbsp;Born on <span className="text-gray-50">November 19, 2001</span> (22 y/o)</span>
                 </li>
@@ -59,7 +59,7 @@ export default function Profile() {
             </ul>
 
             <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1">Certification</h2>
-            <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+            <ul className="max-w-md space-y-1 ml-5 list-disc list-inside text-gray-400">
                 <li>
                     IPA 基本情報技術者 (April 2022)
                 </li>
