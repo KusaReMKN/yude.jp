@@ -5,3 +5,29 @@
 body {
   background-color: rgb(23 23 23);
 }
+
+@keyframes color-fill-anime {
+  0% {
+    fill: #F8C3CD;
+  }
+
+  28% {
+    fill: #F4A7B9;
+  }
+
+  56% {
+    fill: #F596AA;
+  }
+
+  84% {
+    fill: #E16B8C;
+  }
+
+  100% {
+    fill: #DB4D6D;
+  }
+}
+
+.color-fill {
+  animation: color-fill-anime 4s linear infinite alternate forwards;
+}
