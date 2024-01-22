@@ -70,7 +70,7 @@ export default function Mutuals() {
                 <span
                     className="w-32 h-12 bg-gray-500 text-black inline-block"
                     style={{ paddingTop: `10px`}}>
-                    ヒエリの部屋
+                    ヒエリのサイト
                 </span>
             </a>
             <a href="https://rz7.dev">
