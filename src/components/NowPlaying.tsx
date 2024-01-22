@@ -35,7 +35,7 @@ export default function NowPlaying() {
                     <div className="w-5 text-gray-300">
                         <FontAwesomeIcon icon={faMusic} />
                     </div>
-                    <div className="text-left">
+                    <div className="text-left max-w-xs">
                         <span className="text-gray-300">{np.artist}</span>
                         <p className="text-lg">{np.title}</p>
                     </div>
