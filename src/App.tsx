@@ -1,106 +1,63 @@
 import Card from "./components/Card"
+import Profile from "./components/Profile"
+import Works from "./components/Works"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
-
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function App() {
-  const [scrollPercentage, setScrollPercentage] = useState(0);
   const [cardY, setCardY] = useState(0);
   const [contentY, setContentY] = useState(0);
+  
+  const cardElm = document.getElementById("card");
+  const contentElm = document.getElementById("content");
+  const [cardOpacity, setCardOpacity] = useState(1.0);
 
   const handleScroll = () => {
+    
     const card = Math.max((window.innerHeight / 2) - window.scrollY, 0);
     setCardY(card);
-
-    const windowHeight = window.innerHeight;
-    const fullHeight = document.documentElement.scrollHeight;
-    const currentPosition = window.scrollY;
-
-    const scrollPercentage = (currentPosition / (fullHeight - windowHeight));
-
-    setScrollPercentage(scrollPercentage);
     setContentY(card + (window.innerHeight / 2));
-    console.log(scrollPercentage)
+    
   };
+
+  useEffect(() => {
+    const a = cardElm?.getBoundingClientRect().bottom
+    const b = contentElm?.getBoundingClientRect().top
+    if (a && b) {
+        if (a - b > 0 && a - b < 100) {
+          setCardOpacity((100 - (a - b)) / 100)
+        } else if (a - b < 0) {
+          setCardOpacity(100)
+        } else {
+          setCardOpacity(0)
+        }
+      }
+  }, [cardY, contentY])
 
   useEffect(() => {
     handleScroll();
     window.addEventListener('scroll', handleScroll);
-
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  useEffect(() => {
-      handleScroll();
-      window.addEventListener('scroll', handleScroll, { passive: true });
-      return () => {
-          window.removeEventListener('scroll', handleScroll);
-      };
-  }, []);
-
   return (
-    <div>
-      <div className="sticky top-0 z-0 h-screen flex justify-center bg-neutral-900 absolute">
-          <div className="fixed w-full z-10 bg-neutral-900" style={{ top: `${cardY}px` }}>
-            <Card />
-            <p className="text-white">{document.documentElement.clientHeight}, {(window.innerHeight / 2) - window.scrollY}</p>
-            </div>
-        </div>
-        
-        <div className="flex justify-center absolute -z-10" style={{ top: `${contentY}px` }}>
-        <div className="text-white">
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
-        <p>AAAAAAAAAA</p>
+    <>
+      <div className={`sticky top-0 -z-10 h-screen absolute`} style={{ opacity: cardOpacity }}>
+        <div id="card" className="fixed w-full z-10 bg-neutral-900 py-5" style={{ top: `${cardY}px` }}>
+          <Card />
         </div>
       </div>
-    </div>
-      
+        
+      <div id="content" className="absolute z-10 text-white m-auto left-0 right-0 max-w-6xl p-5" style={{ top: `${contentY}px`}}>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 w-full">
+            <Profile />
+            <Works />
+          </div>
+
+          <div className="text-center text-gray-500">&copy; 2024 yude</div>
+      </div>
+    </>
   )
 }
