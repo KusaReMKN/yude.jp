@@ -1,6 +1,7 @@
 import Card from "./components/Card"
 import Profile from "./components/Profile"
 import Links from "./components/Links"
+import Keys from "./components/Keys"
 
 import { useState, useEffect } from 'react';
 
@@ -54,9 +55,14 @@ export default function App() {
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-5 w-full">
           <Profile />
           <Links />
+          <Keys />
         </div>
 
-        <div className="text-center text-gray-500">&copy; 2024 yude</div>
+        <div className="text-center text-gray-500 mb-5">
+          <a href="https://github.com/yudejp/yude.jp">
+            &copy; 2024 yude
+          </a>
+        </div>
       </div>
     </div>
   )
