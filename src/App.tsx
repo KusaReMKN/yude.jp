@@ -4,41 +4,50 @@ import Links from "./components/Links"
 import Keys from "./components/Keys"
 import Activities from "./components/Activities"
 import Footer from "./components/Footer"
+import Mutuals from "./components/Mutuals"
 
 import { useState, useEffect } from 'react';
 
 export default function App() {
   const [cardY, setCardY] = useState(0);
   const [contentY, setContentY] = useState(0);
-  
-  const cardElm = document.getElementById("card");
-  const contentElm = document.getElementById("content");
   const [cardOpacity, setCardOpacity] = useState(1.0);
-
+  
   const handleScroll = () => {
-    
-    const card = Math.max((window.innerHeight / 2) - window.scrollY, 0);
+    const card = Math.max((window.innerHeight / 2) - window.scrollY, 100);
     setCardY(card);
-    setContentY(card + (window.innerHeight / 2));
-    
+
+    const mutualsElm = document.getElementById("mutuals");
+    let mutualsY = 0;
+    if (mutualsElm) {
+      mutualsY += mutualsElm.scrollHeight;
+    }
+    setContentY(card + (window.innerHeight / 2) + mutualsY * 2);
+
+    const cardElm = document.getElementById("card");
+    const contentElm = document.getElementById("content");
+    const a = cardElm?.getBoundingClientRect().bottom
+    const b = contentElm?.getBoundingClientRect().top
+
+    if (a && b) {
+      if (a - b > 0 && a - b < 100) {
+        setCardOpacity((100 - (a - b)) / 100)
+      } else if (a - b < 0) {
+        setCardOpacity(100)
+      } else {
+        setCardOpacity(0)
+      }
+    }
   };
 
   useEffect(() => {
-    const a = cardElm?.getBoundingClientRect().bottom
-    const b = contentElm?.getBoundingClientRect().top
-    if (a && b) {
-        if (a - b > 0 && a - b < 100) {
-          setCardOpacity((100 - (a - b)) / 100)
-        } else if (a - b < 0) {
-          setCardOpacity(100)
-        } else {
-          setCardOpacity(0)
-        }
-      }
-  }, [cardY, contentY])
-
-  useEffect(() => {
     handleScroll();
+    
+    const mutualElm = document.getElementById("mutuals");
+    if (mutualElm) {
+      window.scrollTo(0, mutualElm.scrollHeight)
+    }
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -46,8 +55,12 @@ export default function App() {
   }, []);
 
   return (
+    <>
+    <div id="mutuals">
+      <Mutuals />
+    </div>
     <div className="flex justify-center">
-      <div className={`sticky top-0 h-screen absolute`} style={{ opacity: cardOpacity }}>
+      <div className={`sticky h-screen absolute`} style={{ opacity: cardOpacity, marginTop: `${document.getElementById("mutuals")?.offsetHeight}px` }}>
         <div id="card" className="fixed bg-neutral-900 py-5 -ml-40 -mt-20" style={{ top: `${cardY}px` }}>
           <Card />
         </div>
@@ -61,10 +74,11 @@ export default function App() {
           <Activities />
         </div>
 
-        <div className="mb-5">
+        <div className="mb-5" id="test">
           <Footer />
         </div> 
       </div>
     </div>
+    </>
   )
 }
