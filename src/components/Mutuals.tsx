@@ -11,7 +11,7 @@ export default function Mutuals() {
                 <img src="./mutual-links/kris_fail.png" className="h-12 inline" />
             </a>
             <a href="https://kusaremkn.com">
-                <img src="./mutual-links/kusaremkn.png" className="h-12 inline" />
+                <img src="./mutual-links/kusaremkn.webp" className="h-12 inline" />
             </a>
             <a href="https://nona-takahara.github.io/">
                 <img src="./mutual-links/nona-takahara.png" className="h-12 inline" />
