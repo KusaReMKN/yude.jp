@@ -27,11 +27,11 @@ export default function Activities() {
                     </time>
                     <h3 className="text-lg font-semibold text-white">
                         <a href="https://hiss25th.sakura.ne.jp/">
-                            Poster session
+                        The 25th IEEE Hiroshima Section Student Symposium
                         </a>
                     </h3>
                     <p className="text-base font-normal text-gray-400">
-                        The 25th IEEE Hiroshima Section Student Symposium
+                        Poster session
                     </p>
                 </li>
                 <li className="mb-2 ms-4">
