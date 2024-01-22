@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faXTwitter, faDiscord, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function Card() {
     return (
@@ -19,6 +20,19 @@ export default function Card() {
                     </p>
                     <p className="font-mono left-0.5 relative">
                         <FontAwesomeIcon icon={faPhone} /> +81 70-8909-1949
+                    </p>
+                    <p className="font-mono left-0.5 relative">
+                        <a href="https://x.com/yude_jp">
+                            <FontAwesomeIcon icon={faXTwitter} /> @yude_jp
+                        </a>
+                    </p>
+                    <p className="font-mono left-0.5 relative">
+                        <FontAwesomeIcon icon={faDiscord} /> <span className="-ml-1">yude</span>
+                    </p>
+                    <p className="font-mono left-0.5 relative">
+                        <a href="https://github.com/yude">
+                            <FontAwesomeIcon icon={faGithub} /> yude
+                        </a>
                     </p>
                 </div>
             </div>

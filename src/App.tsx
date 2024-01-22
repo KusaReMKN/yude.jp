@@ -1,6 +1,6 @@
 import Card from "./components/Card"
 import Profile from "./components/Profile"
-import Works from "./components/Works"
+import Links from "./components/Links"
 
 import { useState, useEffect } from 'react';
 
@@ -43,21 +43,21 @@ export default function App() {
   }, []);
 
   return (
-    <>
-      <div className={`sticky top-0 -z-10 h-screen absolute`} style={{ opacity: cardOpacity }}>
-        <div id="card" className="fixed w-full z-10 bg-neutral-900 py-5" style={{ top: `${cardY}px` }}>
+    <div className="flex justify-center">
+      <div className={`sticky top-0 h-screen absolute`} style={{ opacity: cardOpacity }}>
+        <div id="card" className="fixed bg-neutral-900 py-5 -ml-40 -mt-20" style={{ top: `${cardY}px` }}>
           <Card />
         </div>
       </div>
         
-      <div id="content" className="absolute z-10 text-white m-auto left-0 right-0 max-w-6xl p-5" style={{ top: `${contentY}px`}}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5 w-full">
-            <Profile />
-            <Works />
-          </div>
+      <div id="content" className="absolute text-white max-w-6xl" style={{ top: `${contentY}px`}}>
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-5 w-full">
+          <Profile />
+          <Links />
+        </div>
 
-          <div className="text-center text-gray-500">&copy; 2024 yude</div>
+        <div className="text-center text-gray-500">&copy; 2024 yude</div>
       </div>
-    </>
+    </div>
   )
 }
