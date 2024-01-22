@@ -2,6 +2,8 @@ import Card from "./components/Card"
 import Profile from "./components/Profile"
 import Links from "./components/Links"
 import Keys from "./components/Keys"
+import Activities from "./components/Activities"
+import Footer from "./components/Footer"
 
 import { useState, useEffect } from 'react';
 
@@ -56,13 +58,12 @@ export default function App() {
           <Profile />
           <Links />
           <Keys />
+          <Activities />
         </div>
 
-        <div className="text-center text-gray-500 mb-5">
-          <a href="https://github.com/yudejp/yude.jp">
-            &copy; 2024 yude
-          </a>
-        </div>
+        <div className="mb-5">
+          <Footer />
+        </div> 
       </div>
     </div>
   )
