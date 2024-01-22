@@ -13,7 +13,6 @@ export default function Card() {
                 <p className="text-5xl text-white">
                     yude
                 </p>
-                <p className="text-gray-400 text-xl">Hiroshima City University</p>
                 <div className="text-white mt-2">
                     <p className="font-mono left-0.5 relative">
                         <FontAwesomeIcon icon={faEnvelope} /> i@yude.jp
@@ -21,7 +20,7 @@ export default function Card() {
                     <p className="font-mono left-0.5 relative">
                         <FontAwesomeIcon icon={faPhone} /> +81 70-8909-1949
                     </p>
-            </div>
+                </div>
             </div>
         </div>
         </>
