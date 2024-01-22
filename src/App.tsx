@@ -5,6 +5,8 @@ import Keys from "./components/Keys"
 import Activities from "./components/Activities"
 import Footer from "./components/Footer"
 import Mutuals from "./components/Mutuals"
+import Spotify from "./components/Spotify"
+import Services from "./components/Services"
 
 import { useState, useEffect } from 'react';
 
@@ -72,6 +74,8 @@ export default function App() {
           <Links />
           <Keys />
           <Activities />
+          <Spotify />
+          <Services />
         </div>
 
         <div className="mb-5" id="test">
