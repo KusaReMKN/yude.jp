@@ -2,4 +2,4 @@
 
 ## License
 
-MIT
+MIT (for code), CC-BY 4.0 (for content)
