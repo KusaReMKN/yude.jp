@@ -61,13 +61,14 @@ export default function App() {
     <div id="mutuals">
       <Mutuals />
     </div>
-    <div className="flex justify-center">
+    <div>
       <div className={`sticky h-screen absolute`} style={{ opacity: cardOpacity, marginTop: `${document.getElementById("mutuals")?.offsetHeight}px` }}>
-        <div id="card" className="fixed bg-neutral-900 py-5 -ml-40 -mt-20" style={{ top: `${cardY}px` }}>
+        <div id="card" className="fixed bg-neutral-900 py-5 -mt-20" style={{ top: `${cardY}px` }}>
           <Card />
         </div>
       </div>
         
+      <div className="flex justify-center">
       <div id="content" className="absolute text-white max-w-6xl" style={{ top: `${contentY}px`}}>
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-5 w-full">
           <Profile />
@@ -81,6 +82,7 @@ export default function App() {
         <div className="mb-5" id="test">
           <Footer />
         </div> 
+      </div>
       </div>
     </div>
     </>
