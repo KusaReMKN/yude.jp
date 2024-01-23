@@ -5,7 +5,7 @@ export default function Logo() {
         id="Layer_1"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
-        width="100px"
+        width="140px"
         viewBox="0 0 188 127"
         enableBackground="new 0 0 188 127"
         xmlSpace="preserve"
