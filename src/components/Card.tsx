@@ -29,7 +29,7 @@ export default function Card() {
                 setNp(data)
             }
         })
-    })
+    }, [])
 
     return (
         <div className="container">
