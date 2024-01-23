@@ -36,7 +36,7 @@ export default function Card() {
             <div
                 className="absolute opacity-20 w-screen -z-10 blur-sm"
                 style={np && np.isPlaying ? {
-                    height: `89%`,
+                    height: `93%`,
                     backgroundImage: `url(${np.album_art})`,
                     backgroundColor: `rgba(255, 255, 255, 0.2)`,
                     backgroundBlendMode: `lighten`
