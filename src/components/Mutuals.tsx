@@ -67,11 +67,7 @@ export default function Mutuals() {
                 </span>
             </a>
             <a href="https://hieri.vercel.app">
-                <span
-                    className="w-32 h-12 bg-gray-500 text-black inline-block"
-                    style={{ paddingTop: `10px`}}>
-                    ヒエリのサイト
-                </span>
+            <img src="./mutual-links/hieri.png" className="h-12 inline" />
             </a>
             <a href="https://rz7.dev">
                 <span
