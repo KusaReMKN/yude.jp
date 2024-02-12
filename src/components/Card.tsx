@@ -44,7 +44,13 @@ export default function Card() {
             ></div>
             <div className="flex justify-center w-screen items-center">
                 <div className="mx-2 inline-block">
-                    <img className="rounded-full" width={100} height={100} src="./avatar.webp" />
+                    <img
+                        draggable="false"
+                        className="rounded-full hover:cursor-grab"
+                        width={100}
+                        height={100}
+                        src="./avatar.webp"
+                    />
                 </div>
                 <div className="mx-2 text-left h-full inline-block">
                     <Logo />
