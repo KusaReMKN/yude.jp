@@ -5,9 +5,6 @@ export default function Profile() {
     return (
         <>
         <div className="rounded-lg w-full">
-            <h1 className="text-2xl text-center">Profile</h1>
-            <div className="border border-white-500"></div>
-
             <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">Affiliation</h2>
 
             <ol className="relative border-s border-gray-700 left-2">                  
@@ -33,10 +30,13 @@ export default function Profile() {
                     </p>
                     <p className="text-base font-normal text-gray-400">
                         <a href="http://www.cne.info.hiroshima-cu.ac.jp/">
-                            Department of Computer and Network Engineering,
+                            Department of Computer and Network Engineering
                         </a>
-                        &nbsp;
-                        <a href="https://www2.info.hiroshima-cu.ac.jp/">Faculty of Information Sciences</a>
+                    </p>
+                    <p className="text-base font-normal text-gray-400">
+                        <a href="https://www2.info.hiroshima-cu.ac.jp/">
+                            Faculty of Information Sciences
+                        </a>
                     </p>
                 </li>
                 <li className="ms-4">

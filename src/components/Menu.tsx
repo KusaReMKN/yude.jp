@@ -23,21 +23,41 @@ export default function Menu() {
 
     return (
       <RecoilRoot>
-        <ul className="w-full text-lg font-medium">
-            <li className="w-full px-4 py-2" onClick={() => {setPage(Pages.Profile)}}>
-                <FontAwesomeIcon icon={faUser} />{" "}プロフィール
+        <ul className="w-full text-lg font-medium text-center">
+            <li
+                className={`w-full px-4 py-2${page === Pages.Profile ? " bg-slate-700" : ""}`}
+                onClick={() => {setPage(Pages.Profile)}}
+            >
+                <FontAwesomeIcon icon={faUser} />{" "}
+                <p>プロフィール</p>
             </li>
-            <li className="w-full px-4 py-2" onClick={() => {setPage(Pages.Links)}}>
-                <FontAwesomeIcon icon={faLink} />{" "}リンク
+            <li
+                className={`w-full px-4 py-2${page === Pages.Links ? " bg-slate-700" : ""}`}
+                onClick={() => {setPage(Pages.Links)}}
+            >
+                <FontAwesomeIcon icon={faLink} />{" "}
+                <p>リンク</p>
             </li>
-            <li className="w-full px-4 py-2" onClick={() => {setPage(Pages.Keys)}}>
-                <FontAwesomeIcon icon={faKey} />{" "}公開鍵
+            <li
+                className={`w-full px-4 py-2${page === Pages.Keys ? " bg-slate-700" : ""}`}
+                onClick={() => {setPage(Pages.Keys)}}
+            >
+                <FontAwesomeIcon icon={faKey} />{" "}
+                <p>公開鍵</p>
             </li>
-            <li className="w-full px-4 py-2" onClick={() => {setPage(Pages.Activities)}}>
-                <FontAwesomeIcon icon={faSquarePersonConfined} />{" "}活動
+            <li
+                className={`w-full px-4 py-2${page === Pages.Activities ? " bg-slate-700" : ""}`}
+                onClick={() => {setPage(Pages.Activities)}}
+            >
+                <FontAwesomeIcon icon={faSquarePersonConfined} />{" "}
+                <p>活動</p>
             </li>
-            <li className="w-full px-4 py-2" onClick={() => {setPage(Pages.Services)}}>
-                <FontAwesomeIcon icon={faStar} />{" "}サービス
+            <li
+                className={`w-full px-4 py-2${page === Pages.Services ? " bg-slate-700" : ""}`}
+                onClick={() => {setPage(Pages.Services)}}
+            >
+                <FontAwesomeIcon icon={faStar} />{" "}
+                <p>サービス</p>
             </li>
         </ul>
       </RecoilRoot>

@@ -2,9 +2,6 @@ export default function Services() {
     return (
         <>
         <div className="rounded-lg w-full">
-            <h1 className="text-2xl text-center">Active services</h1>
-            <div className="border border-white-500"></div>
-
             <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">
                 サービス
             </h2>

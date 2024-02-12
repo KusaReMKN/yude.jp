@@ -2,9 +2,6 @@ export default function Keys() {
     return (
         <>
         <div className="rounded-lg w-full">
-            <h1 className="text-2xl text-center">Public keys</h1>
-            <div className="border border-white-500"></div>
-
             <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">GNU Privacy Guard</h2>
             <ul className="max-w-md space-y-1 list-disc list-inside text-gray-300 ml-5">
                 <li>

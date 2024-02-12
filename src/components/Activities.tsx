@@ -2,9 +2,6 @@ export default function Activities() {
     return (
         <>
         <div className="rounded-lg w-full">
-            <h1 className="text-2xl text-center">Recent activities</h1>
-            <div className="border border-white-500"></div>
-
             <ol className="relative border-s border-gray-700 left-2 mt-3">            
                 <li className="mb-2 ms-4">
                     <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
