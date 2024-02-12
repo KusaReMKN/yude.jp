@@ -28,7 +28,8 @@ export default function Activities() {
                         </a>
                     </h3>
                     <p className="text-base font-normal text-gray-400">
-                        ポスター発表「マイクロコンピュータ向け自律分散死活システムの設計と実装」
+                        ポスター発表
+                        <p>「マイクロコンピュータ向け自律分散死活システムの設計と実装」</p>
                     </p>
                 </li>
                 <li className="mb-2 ms-4">

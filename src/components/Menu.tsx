@@ -23,7 +23,7 @@ export default function Menu() {
 
     return (
       <RecoilRoot>
-        <ul className="w-full text-lg font-medium text-center">
+        <ul className="w-full text-lg font-medium text-center hover:cursor-pointer">
             <li
                 className={`w-full px-4 py-2${page === Pages.Profile ? " bg-slate-700" : ""}`}
                 onClick={() => {setPage(Pages.Profile)}}
