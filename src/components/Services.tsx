@@ -13,12 +13,12 @@ export default function Services() {
                 </li>
                 <li>
                     <a className="hover:underline" href="https://mstdn.soine.site">
-                        Mastodon instance: mstdn.soine.site
+                        Mastodon インスタンス: 添い寝して！
                     </a>
                 </li>
                 <li>
                     <a className="hover:underline" href="https://discord.gg/X6srY7X">
-                        Discord
+                        Discord サーバー
                     </a>
                 </li>
                 <li>
@@ -28,18 +28,18 @@ export default function Services() {
                 </li>
                 <li>
                     <a className="hover:underline" href="https://status.yude.jp/">
-                        Server status
+                        サービス状況
                     </a>
                 </li>
                 <li>
-                    <span>Minecraft multiplayer @ <code>yude.jp</code></span>
+                    <span>Minecraft マルチプレイサーバ @ <code>yude.jp</code></span>
                 </li>
                 <li>
-                    <span>TeamSpeak 3 @ <code>yude.jp</code></span>
+                    <span>TeamSpeak 3 サーバ @ <code>yude.jp</code></span>
                 </li>
             </ul>
             <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">
-                Connectivity
+                接続性
             </h2>
             <ul className="max-w-md space-y-1 ml-5 mt-3 list-disc list-inside text-gray-400">
                 <li>
