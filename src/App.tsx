@@ -69,7 +69,7 @@ export default function App() {
           
         <div className="flex justify-center">
         <div id="content" className="absolute text-white" style={{ top: `${contentY}px`}}>
-          <div className="grid grid-container md:grid-cols-5 gap-2 min-h-[70vh] w-4xl">
+          <div className="grid grid-container md:grid-cols-5 gap-2 min-h-[70vh] w-3xl">
             <div className="hidden md:block md:col-span-1">
               <Menu />
             </div>

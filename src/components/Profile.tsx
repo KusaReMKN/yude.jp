@@ -39,12 +39,6 @@ export default function Profile() {
                         </a>
                     </p>
                 </li>
-                <li className="ms-4">
-                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
-                    <time className="mb-1 text-sm font-normal leading-none text-gray-400">2017 年 4 月 &ndash; 2020 年 3 月</time>
-                    <h3 className="text-lg font-semibold text-white">鳥取県立鳥取東高等学校</h3>
-                    <p className="text-base font-normal text-gray-400">理数科</p>
-                </li>
             </ol>
 
             <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">基本情報</h2>

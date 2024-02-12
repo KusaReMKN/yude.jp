@@ -50,7 +50,7 @@ export default function Menu() {
                 onClick={() => {setPage(Pages.Activities)}}
             >
                 <FontAwesomeIcon icon={faSquarePersonConfined} />{" "}
-                <p>活動</p>
+                <p>歴史</p>
             </li>
             <li
                 className={`w-full px-4 py-2${page === Pages.Services ? " bg-slate-700" : ""}`}

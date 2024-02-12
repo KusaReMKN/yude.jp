@@ -3,7 +3,7 @@ import { useRecoilState } from 'recoil'
 import Profile from "./Profile"
 import Links from "./Links"
 import Keys from "./Keys"
-import Activities from "./Activities"
+import Activities from "./History"
 import Spotify from "./Spotify"
 import Services from "./Services"
 
