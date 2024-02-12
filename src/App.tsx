@@ -1,18 +1,17 @@
-import Card from "./components/Card"
-import Profile from "./components/Profile"
-import Links from "./components/Links"
-import Keys from "./components/Keys"
-import Activities from "./components/Activities"
-import Footer from "./components/Footer"
+import { RecoilRoot } from 'recoil'
+
 import Mutuals from "./components/Mutuals"
-import Spotify from "./components/Spotify"
-import Services from "./components/Services"
+import Card from "./components/Card"
+import Menu from "./components/Menu"
+import ContentRenderer from "./components/ContentRenderer"
+import Footer from "./components/Footer"
 
 import { useState, useEffect } from 'react';
 
 export default function App() {
   const [cardY, setCardY] = useState(0);
   const [contentY, setContentY] = useState(0);
+  
   const [cardOpacity, setCardOpacity] = useState(1.0);
   
   const handleScroll = () => {
@@ -57,34 +56,34 @@ export default function App() {
   }, []);
 
   return (
-    <>
-    <div id="mutuals">
-      <Mutuals />
-    </div>
-    <div>
-      <div className={`sticky h-screen absolute`} style={{ opacity: cardOpacity, marginTop: `${document.getElementById("mutuals")?.offsetHeight}px` }}>
-        <div id="card" className="fixed bg-neutral-900 py-5 -mt-20" style={{ top: `${cardY}px` }}>
-          <Card />
-        </div>
+    <RecoilRoot>
+      <div id="mutuals">
+        <Mutuals />
       </div>
-        
-      <div className="flex justify-center">
-      <div id="content" className="absolute text-white max-w-6xl" style={{ top: `${contentY}px`}}>
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-5 w-full">
-          <Profile />
-          <Links />
-          <Keys />
-          <Activities />
-          <Spotify />
-          <Services />
+      <div>
+        <div className={`sticky h-screen absolute`} style={{ opacity: cardOpacity, marginTop: `${document.getElementById("mutuals")?.offsetHeight}px` }}>
+          <div id="card" className="fixed bg-neutral-900 py-5 -mt-20" style={{ top: `${cardY}px` }}>
+            <Card />
+          </div>
         </div>
+          
+        <div className="flex justify-center">
+        <div id="content" className="absolute text-white" style={{ top: `${contentY}px`}}>
+          <div className="grid md:grid-cols-5 gap-2 min-h-[70vh] max-w-3xl">
+            <div className="hidden md:block">
+              <Menu />
+            </div>
+            <div className="w-full px-5 md:col-span-4 md:px-0">
+              <ContentRenderer />
+            </div>
+          </div>
 
-        <div className="mb-5" id="test">
-          <Footer />
-        </div> 
+          <div className="mb-5" id="test">
+            <Footer />
+          </div> 
+        </div>
+        </div>
       </div>
-      </div>
-    </div>
-    </>
+    </RecoilRoot>
   )
 }

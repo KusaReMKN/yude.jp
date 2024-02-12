@@ -5,9 +5,7 @@ import { faAnglesRight } from '@fortawesome/free-solid-svg-icons'
 export default function Links() {
     return (
         <>
-            <div className="p-5 rounded-lg max-w-2xl">
-                <h1 className="text-2xl text-center">Links</h1>
-                <div className="border border-white-500 mb-3"></div>
+            <div className="rounded-lg w-full">
                 <div className="gap-x-6 gap-y-8 flex flex-wrap">
                     <div className="w-24 h-16">
                         <a href="https://x.com/yude_jp">

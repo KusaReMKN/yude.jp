@@ -4,7 +4,7 @@ import { faCake, faMapPin } from '@fortawesome/free-solid-svg-icons'
 export default function Profile() {
     return (
         <>
-        <div className="p-5 rounded-lg max-w-2xl">
+        <div className="rounded-lg w-full">
             <h1 className="text-2xl text-center">Profile</h1>
             <div className="border border-white-500"></div>
 

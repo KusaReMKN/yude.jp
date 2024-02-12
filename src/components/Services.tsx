@@ -1,12 +1,12 @@
 export default function Services() {
     return (
         <>
-        <div className="p-5 rounded-lg max-w-2xl">
+        <div className="rounded-lg w-full">
             <h1 className="text-2xl text-center">Active services</h1>
             <div className="border border-white-500"></div>
 
             <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">
-                Major public services
+                サービス
             </h2>
             <ul className="max-w-md space-y-1 ml-5 mt-3 list-disc list-inside text-gray-400">
                 <li>

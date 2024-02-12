@@ -1,7 +1,7 @@
 export default function Keys() {
     return (
         <>
-        <div className="p-5 rounded-lg max-w-2xl">
+        <div className="rounded-lg w-full">
             <h1 className="text-2xl text-center">Public keys</h1>
             <div className="border border-white-500"></div>
 
