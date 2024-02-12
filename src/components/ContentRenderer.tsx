@@ -12,7 +12,7 @@ import { currentPage, Pages } from "./Menu"
 
 
 export default function ContentRenderer() {
-    const [page, setPage] = useRecoilState(currentPage);
+    const [page, _] = useRecoilState(currentPage);
     return (
         <>
             { page === Pages.Profile && <><Profile /><Spotify /></> }
