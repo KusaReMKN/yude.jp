@@ -43,7 +43,7 @@ export default function Profile() {
             
             <p className="text-right">
                 <a href="https://scrapbox.io/yude/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%B4%BB%E5%8B%95%E7%AD%89">
-                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />&nbsp;過去の活動
+                    過去の活動&nbsp;<FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                 </a>
             </p>
 
