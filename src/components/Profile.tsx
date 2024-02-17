@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCake, faMapPin } from '@fortawesome/free-solid-svg-icons'
+import { faCake, faMapPin, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 export default function Profile() {
     return (
@@ -40,6 +40,12 @@ export default function Profile() {
                     </p>
                 </li>
             </ol>
+            
+            <p className="text-right">
+                <a href="https://scrapbox.io/yude/%E9%81%8E%E5%8E%BB%E3%81%AE%E6%B4%BB%E5%8B%95%E7%AD%89">
+                    <FontAwesomeIcon icon={faArrowUpRightFromSquare} />&nbsp;過去の活動
+                </a>
+            </p>
 
             <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">基本情報</h2>
             

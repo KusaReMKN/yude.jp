@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faStar} from '@fortawesome/free-regular-svg-icons'
-import { faLink, faKey, faSquarePersonConfined } from '@fortawesome/free-solid-svg-icons'
+import { faLink, faKey } from '@fortawesome/free-solid-svg-icons'
 
 import { RecoilRoot, atom, useRecoilState } from 'recoil'
 
@@ -44,13 +44,6 @@ export default function Menu() {
             >
                 <FontAwesomeIcon icon={faKey} />{" "}
                 <p>公開鍵</p>
-            </li>
-            <li
-                className={`w-full px-4 py-2${page === Pages.Activities ? " bg-slate-700" : ""}`}
-                onClick={() => {setPage(Pages.Activities)}}
-            >
-                <FontAwesomeIcon icon={faSquarePersonConfined} />{" "}
-                <p>歴史</p>
             </li>
             <li
                 className={`w-full px-4 py-2${page === Pages.Services ? " bg-slate-700" : ""}`}

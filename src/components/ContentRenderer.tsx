@@ -3,7 +3,6 @@ import { useRecoilState } from 'recoil'
 import Profile from "./Profile"
 import Links from "./Links"
 import Keys from "./Keys"
-import Activities from "./History"
 import Spotify from "./Spotify"
 import Services from "./Services"
 
@@ -18,7 +17,6 @@ export default function ContentRenderer() {
             { page === Pages.Profile && <><Profile /><Spotify /></> }
             { page === Pages.Links && <Links /> }
             { page === Pages.Keys && <Keys /> }
-            { page === Pages.Activities && <Activities /> }
             { page === Pages.Services && <Services /> }
         </>
     )
