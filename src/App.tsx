@@ -2,7 +2,8 @@ import { RecoilRoot } from 'recoil'
 
 import Mutuals from "./components/Mutuals"
 import Card from "./components/Card"
-import Menu from "./components/Menu"
+import VerticalMenu from "./components/VerticalMenu"
+import HorizontalMenu from "./components/HorizontalMenu"
 import ContentRenderer from "./components/ContentRenderer"
 import Footer from "./components/Footer"
 
@@ -71,7 +72,10 @@ export default function App() {
         <div id="content" className="absolute text-white" style={{ top: `${contentY}px`}}>
           <div className="grid grid-container md:grid-cols-5 gap-2 min-h-[70vh] w-3xl">
             <div className="hidden md:block md:col-span-1">
-              <Menu />
+              <VerticalMenu />
+            </div>
+            <div className="block md:hidden">
+              <HorizontalMenu />
             </div>
             <div className="w-full px-5 md:col-span-4 md:px-0">
               <ContentRenderer />

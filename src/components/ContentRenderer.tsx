@@ -6,7 +6,7 @@ import Keys from "./Keys"
 import Spotify from "./Spotify"
 import Services from "./Services"
 
-import { currentPage, Pages } from "./Menu"
+import { currentPage, Pages } from "./VerticalMenu"
 
 
 
