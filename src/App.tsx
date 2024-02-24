@@ -43,6 +43,10 @@ export default function App() {
   };
 
   useEffect(() => {
+    if (window.location.pathname !== '/') {
+      window.history.replaceState(null, '', '/');
+    }
+
     handleScroll();
     
     const mutualElm = document.getElementById("mutuals");
