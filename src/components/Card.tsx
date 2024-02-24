@@ -49,7 +49,7 @@ export default function Card() {
                         className="rounded-full hover:cursor-grab"
                         width={100}
                         height={100}
-                        src="./avatar.webp"
+                        src="/avatar.webp"
                     />
                 </div>
                 <div className="mx-2 text-left h-full inline-block">
