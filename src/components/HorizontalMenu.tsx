@@ -1,17 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faStar} from '@fortawesome/free-regular-svg-icons'
+import { faUser, faStar, faComments } from '@fortawesome/free-regular-svg-icons'
 import { faLink, faKey } from '@fortawesome/free-solid-svg-icons'
+import { Pages } from "./VerticalMenu"
 
 import { RecoilRoot, atom, useRecoilState } from 'recoil'
-
-export enum Pages {
-    Profile = 0,
-    Links = 1,
-    Keys = 2,
-    Activities = 3,
-    Spotify = 4,
-    Services = 5,
-  }
 
 export const currentPage = atom({
     key: 'page',
@@ -23,7 +15,7 @@ export default function HorizontalMenu() {
 
     return (
       <RecoilRoot>
-        <div className="text-lg font-medium text-center hover:cursor-pointer grid grid-cols-4 grid-flow-col">
+        <div className="text-lg font-medium text-center hover:cursor-pointer grid grid-cols-5 grid-flow-col">
             <div
                 className={`self-start py-3 rounded-lg ${page === Pages.Profile ? "bg-slate-700" : ""}`}
                 onClick={() => {setPage(Pages.Profile)}}
@@ -47,6 +39,12 @@ export default function HorizontalMenu() {
                 onClick={() => {setPage(Pages.Services)}}
             >
                 <FontAwesomeIcon icon={faStar} />{" "}
+            </div>
+            <div
+                className={`self-start py-3 rounded-lg ${page === Pages.Chat ? "bg-slate-700" : ""}`}
+                onClick={() => {setPage(Pages.Chat)}}
+            >
+                <FontAwesomeIcon icon={faComments} />{" "}
             </div>
         </div>
       </RecoilRoot>
