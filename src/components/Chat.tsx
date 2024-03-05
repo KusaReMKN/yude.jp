@@ -48,6 +48,9 @@ export default function Chat() {
             async (text) => {
                 if (text.includes("Success")) {
                     await showAlert("送信しました。");
+                    setBody("");
+                } else {
+                    await showAlert("送信するときになんらかの問題が発生しました。" + text);
                 }
             }
         )
