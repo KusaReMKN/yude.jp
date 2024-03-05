@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { formatDistance } from 'date-fns'
 import { ja } from 'date-fns/locale/ja'
+import { InlineMath } from 'react-katex';
 
 export default function Chat() {
     const [page, _] = useRecoilState(currentPage);
@@ -110,7 +111,11 @@ export default function Chat() {
                                     formatDistance(Date.parse(message.createdAt), new Date(), { addSuffix: true, locale: ja })
                                 }
                             </p>
-                            <p className="font-serif text-2xl">{message.body}</p>
+                            <p className="font-serif text-2xl">
+                                <InlineMath>
+                                    {message.body}
+                                </InlineMath>
+                            </p>
                         </div>
                     )
                 })
