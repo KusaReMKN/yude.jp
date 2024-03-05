@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faStar} from '@fortawesome/free-regular-svg-icons'
+import { faUser, faStar, faComments } from '@fortawesome/free-regular-svg-icons'
 import { faLink, faKey } from '@fortawesome/free-solid-svg-icons'
 
 import { RecoilRoot, atom, useRecoilState } from 'recoil'
@@ -11,6 +11,7 @@ export enum Pages {
     Activities = 3,
     Spotify = 4,
     Services = 5,
+    Chat = 6,
   }
 
 export const currentPage = atom({
@@ -51,6 +52,13 @@ export default function VerticalMenu() {
             >
                 <FontAwesomeIcon icon={faStar} />{" "}
                 <p>サービス</p>
+            </li>
+            <li
+                className={`w-full px-4 py-2 rounded-lg${page === Pages.Chat ? " bg-slate-700" : ""}`}
+                onClick={() => {setPage(Pages.Chat)}}
+            >
+                <FontAwesomeIcon icon={faComments} />{" "}
+                <p>チャット</p>
             </li>
         </ul>
       </RecoilRoot>
