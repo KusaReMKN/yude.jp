@@ -6,6 +6,7 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { formatDistance } from 'date-fns'
 import { ja } from 'date-fns/locale/ja'
 import { InlineMath } from 'react-katex';
+import Markdown from 'react-markdown';
 
 export default function Chat() {
     const [page, _] = useRecoilState(currentPage);
@@ -88,26 +89,32 @@ export default function Chat() {
                     {alert}
                 </div>
             </div>
-            <div className="text-wrap">
+            <div className="text-wrap max-w-xl">
                 <div className="mb-5">
-                    <label className="block mb-2 text-sm font-medium text-white">名前</label>
-                    <input type="text" id="name" className="block p-4 border rounded-lg text-base bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" value={name} onChange={updateName} />
+                    <label className="block mb-2 text-sm font-medium text-white">
+                        名前{" "}
+                        <span className="text-orange-400">*</span>
+                    </label>
+                    <input type="text" id="name" className="w-full block p-4 border rounded-lg text-base bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" value={name} onChange={updateName} placeholder="Hatsune Mike" />
                 </div>
                 <div className="mb-5">
-                    <label className="block mb-2 text-sm font-medium text-white">本文</label>
-                    <input type="text" id="body" className="block p-4 border rounded-lg text-base bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" value={body} onChange={updateBody} />
+                    <label className="block mb-2 text-sm font-medium text-white">
+                        本文{" "}
+                        <span className="text-orange-400">*</span>
+                    </label>
+                    <textarea id="body" rows={4} className="font-serif text-2xl w-full block p-2.5 rounded-lg border bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500" placeholder="言い残したいことは？" value={body} onChange={updateBody}></textarea>
                 </div>
                 <button
                     onClick={submit}
                     type="button"
-                    className={`text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800${ name === "" || body === "" ? " opacity-20" : ""}`}
+                    className={`w-full text-xl text-white focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-blue-600 hover:bg-blue-700 focus:ring-blue-800${ name === "" || body === "" ? " opacity-20" : ""}`}
                     disabled={name === "" || body === ""}
                 >
                     <FontAwesomeIcon icon={faPaperPlane} />{" "}送信
                 </button>
             </div>
 
-            <div className="overflow-auto max-h-96 mt-5 rounded-lg max-w-2xl">
+            <div className="overflow-auto max-h-96 mt-5 rounded-lg max-w-xl">
             {
                 messages &&
                 messages.map((message, index) => {
@@ -120,9 +127,17 @@ export default function Chat() {
                                 }
                             </p>
                             <p className="font-serif text-2xl">
-                                {message.body.includes("$$") ? <InlineMath>
-                                    {message.body.replace(/\$\$/g, "")}
-                                </InlineMath> : <>{message.body}</>}
+                                {
+                                    message.body.includes("$$")
+                                    ?
+                                    <InlineMath>
+                                        {message.body.replace(/\$\$/g, "")}
+                                    </InlineMath>
+                                    :
+                                    <Markdown className="prose prose-xl prose-invert">
+                                        {message.body}
+                                    </Markdown>
+                                }
                             </p>
                         </div>
                     )
