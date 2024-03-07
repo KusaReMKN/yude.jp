@@ -61,6 +61,9 @@ export default function Profile() {
             <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">資格, 免許</h2>
             <ul className="max-w-md space-y-1 ml-5 list-disc list-inside text-gray-400">
                 <li>
+                    プロジェクトセカイ カラフルステージ！ feat. 初音ミク フルコンボ楽曲 (MASTER) 200 曲 (2023 年 6 月)
+                </li>
+                <li>
                     IPA 基本情報技術者 (2022 年 4 月)
                 </li>
                 <li>
@@ -72,9 +75,13 @@ export default function Profile() {
                 <li>
                     TOEIC Listening & Reading, IP テスト 960 点 (2021 年 12 月)
                 </li>
+                <li>
+                    実用英語技能検定 2 級 (2018 年 10 月)
+                </li>
+                <li>
+                    全日本弓道連盟 審査 1 級 (2015 年 6 月)
+                </li>
             </ul>
-
-
         </div>
         </>
     )
