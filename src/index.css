@@ -2,8 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: rgb(23 23 23);
+@layer base {
+  body {
+    @apply bg-zinc-200;
+    @apply dark:bg-neutral-900;
+  }
 }
 
 @keyframes color-fill-anime {

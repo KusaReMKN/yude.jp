@@ -5,10 +5,10 @@ export default function Services() {
     return (
         <>
         <div className="rounded-lg w-full">
-            <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">
+            <h2 className="text-xl font-semibold dark:text-gray-200 mt-2 mb-1 ml-1">
                 サービス
             </h2>
-            <ul className="max-w-md space-y-1 ml-5 mt-3 list-disc list-inside text-gray-400">
+            <ul className="max-w-md space-y-1 ml-5 mt-3 list-disc list-inside dark:text-gray-400">
                 <li>
                     <a className="hover:underline" href="https://soine.site">
                         soine.site <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
@@ -41,11 +41,11 @@ export default function Services() {
                     <span>TeamSpeak 3 サーバ @ <code>yude.jp</code></span>
                 </li>
             </ul>
-            <h2 className="text-xl font-semibold text-gray-200 mt-2 mb-1 ml-1">
+            <h2 className="text-xl font-semibold dark:text-gray-200 mt-2 mb-1 ml-1">
                 接続性
             </h2>
-            <p className="text-gray-200 ml-3 -mb-1">閲覧にはそれぞれのプロトコルに対応したソフトウェアが必要です。</p>
-            <ul className="max-w-md space-y-1 ml-5 mt-3 list-disc list-inside text-gray-400">
+            <p className="dark:text-gray-200 ml-3 -mb-1">閲覧にはそれぞれのプロトコルに対応したソフトウェアが必要です。</p>
+            <ul className="max-w-md space-y-1 ml-5 mt-3 list-disc list-inside dark:text-gray-400">
                 <li>
                     <a className="hover:underline" href="http://yudejpwxp2cziclocqjfd55ucw2dh6ncswopluh7exwusjlfkvkwhwqd.onion/">
                         The Onion Router <FontAwesomeIcon icon={faArrowUpRightFromSquare} />

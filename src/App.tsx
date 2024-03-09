@@ -6,6 +6,7 @@ import VerticalMenu from "./components/VerticalMenu"
 import HorizontalMenu from "./components/HorizontalMenu"
 import ContentRenderer from "./components/ContentRenderer"
 import Footer from "./components/Footer"
+import { ThemeProvider, ThemeSwitcher } from "./components/Theme"
 
 import { useState, useEffect } from 'react';
 
@@ -58,36 +59,43 @@ export default function App() {
 
   return (
     <RecoilRoot>
-      <div id="mutuals">
-        <Mutuals />
-      </div>
-      <div>
-        <div className={`sticky h-screen absolute`} style={{ opacity: cardOpacity, marginTop: `${document.getElementById("mutuals")?.offsetHeight}px` }}>
-          <div id="card" className="fixed bg-neutral-900 py-5 -mt-20" style={{ top: `${cardY}px` }}>
-            <Card />
+      <ThemeProvider>
+        <>
+          <div id="mutuals">
+            <Mutuals />
           </div>
-        </div>
-          
-        <div className="flex justify-center">
-        <div id="content" className="absolute text-white" style={{ top: `${contentY}px`}}>
-          <div className="grid grid-container md:grid-cols-5 gap-2 min-h-[70vh] w-3xl">
-            <div className="hidden md:block md:col-span-1">
-              <VerticalMenu />
+          <div>
+            <div className={`sticky h-screen absolute`} style={{ opacity: cardOpacity, marginTop: `${document.getElementById("mutuals")?.offsetHeight}px` }}>
+              <div id="card" className="fixed py-5 -mt-20" style={{ top: `${cardY}px` }}>
+                <Card />
+              </div>
             </div>
-            <div className="block md:hidden">
-              <HorizontalMenu />
-            </div>
-            <div className="w-full px-5 md:col-span-4 md:px-0">
-              <ContentRenderer />
-            </div>
-          </div>
+              
+            <div className="grid justify-items-center">
+            <div id="content" className="absolute dark:text-white sm:min-w-[565px]" style={{ top: `${contentY}px`}}>
+                <div className="grid grid-container md:grid-cols-5 gap-2 min-h-[70vh] w-3xl">
+                  <div className="hidden md:block md:col-span-1">
+                    <VerticalMenu />
+                  </div>
+                  <div className="block md:hidden">
+                    <HorizontalMenu />
+                  </div>
+                  <div className="px-5 md:col-span-4 md:px-0">
+                    <ContentRenderer />
+                  </div>
+                </div>
 
-          <div className="mb-5" id="test">
-            <Footer />
-          </div> 
-        </div>
-        </div>
-      </div>
+                <div className="mb-5 mt-5" id="test">
+                  <Footer />
+                </div> 
+              </div>
+            </div>
+          </div>
+          <div className="fixed top-5 right-5 text-3xl dark:text-white">
+            <ThemeSwitcher />
+          </div>
+        </>
+      </ThemeProvider>
     </RecoilRoot>
   )
 }

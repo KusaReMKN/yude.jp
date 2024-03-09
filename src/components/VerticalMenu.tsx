@@ -21,40 +21,41 @@ export const currentPage = atom({
 
 export default function VerticalMenu() {
     const [page, setPage] = useRecoilState(currentPage);
+    const activeColor = " bg-slate-700 text-white"
 
     return (
       <RecoilRoot>
         <ul className="w-full text-lg font-medium text-center hover:cursor-pointer">
             <li
-                className={`w-full px-4 py-2 rounded-lg${page === Pages.Profile ? " bg-slate-700" : ""}`}
+                className={`w-full px-4 py-2 rounded-lg${page === Pages.Profile ? activeColor : ""}`}
                 onClick={() => {setPage(Pages.Profile)}}
             >
                 <FontAwesomeIcon icon={faUser} />{" "}
                 <p>プロフィール</p>
             </li>
             <li
-                className={`w-full px-4 py-2 rounded-lg${page === Pages.Links ? " bg-slate-700" : ""}`}
+                className={`w-full px-4 py-2 rounded-lg${page === Pages.Links ? activeColor : ""}`}
                 onClick={() => {setPage(Pages.Links)}}
             >
                 <FontAwesomeIcon icon={faLink} />{" "}
                 <p>リンク</p>
             </li>
             <li
-                className={`w-full px-4 py-2 rounded-lg${page === Pages.Keys ? " bg-slate-700" : ""}`}
+                className={`w-full px-4 py-2 rounded-lg${page === Pages.Keys ? activeColor : ""}`}
                 onClick={() => {setPage(Pages.Keys)}}
             >
                 <FontAwesomeIcon icon={faKey} />{" "}
                 <p>公開鍵</p>
             </li>
             <li
-                className={`w-full px-4 py-2 rounded-lg${page === Pages.Services ? " bg-slate-700" : ""}`}
+                className={`w-full px-4 py-2 rounded-lg${page === Pages.Services ? activeColor : ""}`}
                 onClick={() => {setPage(Pages.Services)}}
             >
                 <FontAwesomeIcon icon={faStar} />{" "}
                 <p>サービス</p>
             </li>
             <li
-                className={`w-full px-4 py-2 rounded-lg${page === Pages.Chat ? " bg-slate-700" : ""}`}
+                className={`w-full px-4 py-2 rounded-lg${page === Pages.Chat ? activeColor : ""}`}
                 onClick={() => {setPage(Pages.Chat)}}
             >
                 <FontAwesomeIcon icon={faComments} />{" "}

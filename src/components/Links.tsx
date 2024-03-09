@@ -10,7 +10,7 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://x.com/yude_jp">
                             <FontAwesomeIcon className="w-24 h-11" icon={faXTwitter} />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 X
                             </span>
                         </a>
@@ -18,7 +18,7 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://mstdn.soine.site/@yude">
                             <FontAwesomeIcon className="w-24 h-11" icon={faMastodon} />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 Mastodon
                             </span>
                         </a>
@@ -26,7 +26,7 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://keybase.io/yude">
                             <FontAwesomeIcon className="w-24 h-11" icon={faKeybase} />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 Keybase
                             </span>
                         </a>
@@ -34,7 +34,7 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://instagram.com/yude.jp">
                             <FontAwesomeIcon className="w-24 h-11" icon={faInstagram} />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 Instagram
                             </span>
                         </a>
@@ -42,7 +42,7 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://t.me/yudejp">
                             <FontAwesomeIcon className="w-24 h-11" icon={faTelegram} />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 Telegram
                             </span>
                         </a>
@@ -50,7 +50,7 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://github.com/yude">
                             <FontAwesomeIcon className="w-24 h-11" icon={faGithub} />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 GitHub
                             </span>
                         </a>
@@ -58,31 +58,31 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://scrapbox.io/yude">
                             <img src="./logo/scrapbox.svg" className="w-24 h-12 grayscale" />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 Scrapbox
                             </span>
                         </a>
                     </div>
                     <div className="w-24 h-16">
                         <a href="https://zenn.dev/yude">
-                            <img src="./logo/zenn.svg" className="w-24 h-12 text-center invert" />
-                            <span className="block text-gray-400 text-center">
+                            <img src="./logo/zenn.svg" className="w-24 h-12 text-center dark:invert" />
+                            <span className="block dark:text-gray-400 text-center">
                                 Zenn
                             </span>
                         </a>
                     </div>
                     <div className="w-24 h-16">
                         <a href="https://yudejp.hatenablog.jp">
-                            <img src="./logo/hatenablog.svg" className="w-24 h-12 text-center invert" />
-                            <span className="block text-gray-400">
+                            <img src="./logo/hatenablog.svg" className="w-24 h-12 text-center dark:invert" />
+                            <span className="block dark:text-gray-400">
                                 はてなブログ
                             </span>
                         </a>
                     </div>
                     <div className="w-24 h-16">
                         <a href="https://sizu.me/yude">
-                            <img src="./logo/sizume.svg" className="w-24 h-12 text-center invert" />
-                            <span className="block text-gray-400 text-center">
+                            <img src="./logo/sizume.svg" className="w-24 h-12 text-center dark:invert" />
+                            <span className="block dark:text-gray-400 text-center">
                                 しずかなインターネット
                             </span>
                         </a>
@@ -90,7 +90,7 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://steamcommunity.com/id/yudejp">
                             <FontAwesomeIcon className="w-24 h-11" icon={faSteam} />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 Steam
                             </span>
                         </a>
@@ -98,7 +98,7 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://www.last.fm/user/yude_jp">
                             <FontAwesomeIcon className="w-24 h-11" icon={faLastfm} />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 Last.fm
                             </span>
                         </a>
@@ -106,7 +106,7 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://twitch.tv/yudejp">
                             <FontAwesomeIcon className="w-24 h-11" icon={faTwitch} />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 Twitch
                             </span>
                         </a>
@@ -114,7 +114,7 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://open.spotify.com/user/yude1119">
                             <FontAwesomeIcon className="w-24 h-11" icon={faSpotify} />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 Spotify
                             </span>
                         </a>
@@ -122,7 +122,7 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://annict.com/yude">
                             <img src="./logo/annict.png" className="w-12 h-12 ml-6 grayscale" />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 Annict
                             </span>
                         </a>
@@ -130,7 +130,7 @@ export default function Links() {
                     <div className="w-24 h-16">
                         <a href="https://vrcprofile.com/p/yude">
                             <img src="./logo/vrchat.png" className="w-12 ml-6 mt-5" />
-                            <span className="block text-gray-400 text-center mt-2">
+                            <span className="block dark:text-gray-400 text-center mt-2">
                                 VRChat
                             </span>
                         </a>
@@ -138,7 +138,7 @@ export default function Links() {
                     <div className="w-24 h-16 ml-auto">
                         <a href="https://scrapbox.io/yude/アカウント">
                             <FontAwesomeIcon className="w-24 h-11" icon={faAnglesRight} />
-                            <span className="block text-gray-400 text-center">
+                            <span className="block dark:text-gray-400 text-center">
                                 More ...
                             </span>
                         </a>
