@@ -57,7 +57,7 @@ export default function Links() {
                     </div>
                     <div className="w-24 h-16">
                         <a href="https://scrapbox.io/yude">
-                            <img src="./logo/scrapbox.svg" className="w-24 h-12 grayscale" />
+                            <img alt="Scrapbox" src="./logo/scrapbox.svg" className="w-24 h-12 grayscale" />
                             <span className="block dark:text-gray-400 text-center">
                                 Scrapbox
                             </span>
@@ -65,7 +65,7 @@ export default function Links() {
                     </div>
                     <div className="w-24 h-16">
                         <a href="https://zenn.dev/yude">
-                            <img src="./logo/zenn.svg" className="w-24 h-12 text-center dark:invert" />
+                            <img alt="Zenn" src="./logo/zenn.svg" className="w-24 h-12 text-center dark:invert" />
                             <span className="block dark:text-gray-400 text-center">
                                 Zenn
                             </span>
@@ -73,7 +73,7 @@ export default function Links() {
                     </div>
                     <div className="w-24 h-16">
                         <a href="https://yudejp.hatenablog.jp">
-                            <img src="./logo/hatenablog.svg" className="w-24 h-12 text-center dark:invert" />
+                            <img alt="はてなブログ" src="./logo/hatenablog.svg" className="w-24 h-12 text-center dark:invert" />
                             <span className="block dark:text-gray-400">
                                 はてなブログ
                             </span>
@@ -81,7 +81,7 @@ export default function Links() {
                     </div>
                     <div className="w-24 h-16">
                         <a href="https://sizu.me/yude">
-                            <img src="./logo/sizume.svg" className="w-24 h-12 text-center dark:invert" />
+                            <img alt="しずかなインターネット" src="./logo/sizume.svg" className="w-24 h-12 text-center dark:invert" />
                             <span className="block dark:text-gray-400 text-center">
                                 しずかなインターネット
                             </span>
@@ -121,7 +121,7 @@ export default function Links() {
                     </div>
                     <div className="w-24 h-16">
                         <a href="https://annict.com/yude">
-                            <img src="./logo/annict.png" className="w-12 h-12 ml-6 grayscale" />
+                            <img alt="Annict" src="./logo/annict.png" className="w-12 h-12 ml-6 grayscale" />
                             <span className="block dark:text-gray-400 text-center">
                                 Annict
                             </span>
@@ -129,7 +129,7 @@ export default function Links() {
                     </div>
                     <div className="w-24 h-16">
                         <a href="https://vrcprofile.com/p/yude">
-                            <img src="./logo/vrchat.png" className="w-12 ml-6 mt-5" />
+                            <img alt="VRChat" src="./logo/vrchat.png" className="w-12 ml-6 mt-5" />
                             <span className="block dark:text-gray-400 text-center mt-2">
                                 VRChat
                             </span>

@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-zinc-200;
+    @apply bg-zinc-100;
     @apply dark:bg-neutral-900;
   }
 }

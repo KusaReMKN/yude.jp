@@ -39,6 +39,7 @@ export const ThemeSwitcher = () => {
             type="button"
             className="btn btn-secondary"
             onClick={toggleTheme}
+            aria-label="テーマの切り替え"
           >
             {theme === "light" ? (
               <FontAwesomeIcon icon={faMoon} />
