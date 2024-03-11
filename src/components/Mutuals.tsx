@@ -1,16 +1,22 @@
+import Marquee from "react-fast-marquee";
+
 export default function Mutuals() {
-    const noImageBanner = `border border-4 inline-block border-lime-300 bg-slate-200 pt-1.5 w-fit px-3 text-black h-12 font-extrabold`
-    const globalBanner = `h-12 inline`
+    const noImageBanner = `border border-4 border-fuchsia-300 bg-slate-200 pt-1.5 px-3 text-black h-12 font-bold block min-w-56 text-center text-2xl font-serif`
+    const globalBanner = `h-12 inline-block`
 
     return (
-        <div className="flex whitespace-nowrap overflow-x-hidden">
-            <div className="relative">
-                <div className="w-fit animate-marquee">
+        <Marquee
+            pauseOnHover={true}
+            speed={100}
+            className="-z-10"
+        >
             <a href="https://arkw.net">
                 <img
                     alt="arkw.net"
                     src="./mutual-links/arkwnet.webp"
                     className={`${globalBanner} bg-zinc-100`}
+                    width={234}
+                    height={60}
                 />
             </a>
             <a href="https://exout.net/~kirby3ds/">
@@ -18,6 +24,8 @@ export default function Mutuals() {
                     alt="kirby3ds"
                     src="./mutual-links/kirby3ds.webp"
                     className={`${globalBanner}`}
+                    width={234}
+                    height={60}
                 />
             </a>
             <a href="https://kris.fail">
@@ -25,6 +33,8 @@ export default function Mutuals() {
                     alt="kris.fail"
                     src="./mutual-links/kris_fail.webp"
                     className={`${globalBanner}`}
+                    width={234}
+                    height={60}
                 />
             </a>
             <a href="https://kusaremkn.com">
@@ -32,6 +42,8 @@ export default function Mutuals() {
                     alt="KusaReMKN"
                     src="./mutual-links/kusaremkn.webp"
                     className={`${globalBanner}`}
+                    width={234}
+                    height={60}
                 />
             </a>
             <a href="https://nona-takahara.github.io/">
@@ -39,6 +51,8 @@ export default function Mutuals() {
                     alt="nona-takahara"
                     src="./mutual-links/nona-takahara.webp"
                     className={`${globalBanner}`}
+                    width={234}
+                    height={60}
                 />
             </a>
             <a href="https://www.pepepper.net">
@@ -46,6 +60,8 @@ export default function Mutuals() {
                     alt="pepepper"
                     src="./mutual-links/pepepper.webp"
                     className={`${globalBanner}`}
+                    width={234}
+                    height={60}
                 />
             </a>
             <a href="https://qqey.net">
@@ -53,13 +69,17 @@ export default function Mutuals() {
                     alt="qqey.net"
                     src="./mutual-links/qqeynet.webp"
                     className={`${globalBanner}`}
+                    width={234}
+                    height={60}
                 />
             </a>
             <a href="https://sasakulab.com">
-                <img 
+                <img
                     alt="sasakulab.com"
                     src="./mutual-links/sasakulab.webp"
                     className={`${globalBanner}`}
+                    width={234}
+                    height={60}
                 />
             </a>
             <a href="https://nullc.at/">
@@ -67,6 +87,8 @@ export default function Mutuals() {
                     alt="nullcat"
                     src="./mutual-links/nullcat.webp"
                     className={`${globalBanner}`}
+                    width={234}
+                    height={60}
                 />
             </a>
             <a href="https://zopfco.de/">
@@ -80,7 +102,7 @@ export default function Mutuals() {
                 </span>
             </a>
             <a href="https://fuku.day/">
-                <span className={`${noImageBanner}`}>   
+                <span className={`${noImageBanner}`}>
                     Aumy
                 </span>
             </a>
@@ -95,20 +117,19 @@ export default function Mutuals() {
                 </span>
             </a>
             <a href="https://hieri.vercel.app">
-            <img
-                alt="hieri"
-                src="./mutual-links/hieri.webp"
-                className={`${globalBanner}`}
-            />
+                <img
+                    alt="hieri"
+                    src="./mutual-links/hieri.webp"
+                    className={`${globalBanner}`}
+                    width={234}
+                    height={60}
+                />
             </a>
             <a href="https://rz7.dev">
                 <span className={`${noImageBanner}`}>
                     rz7.dev
                 </span>
             </a>
-        </div>
-        </div>
-        </div>
+        </Marquee>
     )
 }
-  

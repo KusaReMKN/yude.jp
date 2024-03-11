@@ -32,19 +32,19 @@ type Props = {
 };
 
 export const ThemeSwitcher = () => {
-    const {theme, toggleTheme} = useTheme();
+    const { theme, toggleTheme } = useTheme();
 
     return (
         <button
             type="button"
-            className="btn btn-secondary"
+            className="btn btn-secondary drop-shadow-md"
             onClick={toggleTheme}
             aria-label="テーマの切り替え"
-          >
+        >
             {theme === "light" ? (
-              <FontAwesomeIcon icon={faMoon} />
+                <FontAwesomeIcon icon={faMoon} />
             ) : (
-              <FontAwesomeIcon icon={faSun} />
+                <FontAwesomeIcon icon={faSun} />
             )}
         </button>
     )
