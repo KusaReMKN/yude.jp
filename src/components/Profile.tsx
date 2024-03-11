@@ -71,7 +71,7 @@ export default function Profile() {
                     普通自動車第一種運転免許, AT 限定 (2021 年 6 月)
                 </li>
                 <li>
-                    TOEIC Listening & Reading: 860 (2022 年 12 月)
+                    TOEIC Listening & Reading: 860 点 (2022 年 12 月)
                 </li>
                 <li>
                     TOEIC Listening & Reading, IP テスト 960 点 (2021 年 12 月)
