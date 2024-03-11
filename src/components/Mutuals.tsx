@@ -3,36 +3,71 @@ export default function Mutuals() {
     const globalBanner = `h-12 inline`
 
     return (
-        <div className="text-center text-gray-500 mb-5">
+        <div className="flex whitespace-nowrap overflow-x-hidden">
+            <div className="relative">
+                <div className="w-fit animate-marquee">
             <a href="https://arkw.net">
-                <img src="./mutual-links/arkwnet.png" className={`${globalBanner}`} />
+                <img
+                    alt="arkw.net"
+                    src="./mutual-links/arkwnet.webp"
+                    className={`${globalBanner} bg-zinc-100`}
+                />
             </a>
             <a href="https://exout.net/~kirby3ds/">
-                <img src="./mutual-links/kirby3ds.png" className={`${globalBanner}`} />
+                <img
+                    alt="kirby3ds"
+                    src="./mutual-links/kirby3ds.webp"
+                    className={`${globalBanner}`}
+                />
             </a>
             <a href="https://kris.fail">
-                <img src="./mutual-links/kris_fail.png" className={`${globalBanner}`} />
+                <img
+                    alt="kris.fail"
+                    src="./mutual-links/kris_fail.webp"
+                    className={`${globalBanner}`}
+                />
             </a>
             <a href="https://kusaremkn.com">
-                <img src="./mutual-links/kusaremkn.webp" className={`${globalBanner}`} />
+                <img
+                    alt="KusaReMKN"
+                    src="./mutual-links/kusaremkn.webp"
+                    className={`${globalBanner}`}
+                />
             </a>
             <a href="https://nona-takahara.github.io/">
-                <img src="./mutual-links/nona-takahara.png" className={`${globalBanner}`} />
+                <img
+                    alt="nona-takahara"
+                    src="./mutual-links/nona-takahara.webp"
+                    className={`${globalBanner}`}
+                />
             </a>
             <a href="https://www.pepepper.net">
-                <img src="./mutual-links/pepepper.png" className={`${globalBanner}`} />
+                <img
+                    alt="pepepper"
+                    src="./mutual-links/pepepper.webp"
+                    className={`${globalBanner}`}
+                />
             </a>
             <a href="https://qqey.net">
-                <img src="./mutual-links/qqeynet.png" className={`${globalBanner}`} />
+                <img
+                    alt="qqey.net"
+                    src="./mutual-links/qqeynet.webp"
+                    className={`${globalBanner}`}
+                />
             </a>
             <a href="https://sasakulab.com">
-                <img src="./mutual-links/sasakulab.png" className={`${globalBanner}`} />
+                <img 
+                    alt="sasakulab.com"
+                    src="./mutual-links/sasakulab.webp"
+                    className={`${globalBanner}`}
+                />
             </a>
             <a href="https://nullc.at/">
-                <img src="./mutual-links/nullcat.png" className={`${globalBanner}`} />
-            </a>
-            <a href="https://yank-nvim.com/">
-                <img src="./mutual-links/yank-nvim.png" className={`${globalBanner}`} />
+                <img
+                    alt="nullcat"
+                    src="./mutual-links/nullcat.webp"
+                    className={`${globalBanner}`}
+                />
             </a>
             <a href="https://zopfco.de/">
                 <span className={`${noImageBanner}`}>
@@ -60,13 +95,19 @@ export default function Mutuals() {
                 </span>
             </a>
             <a href="https://hieri.vercel.app">
-            <img src="./mutual-links/hieri.png" className={`${globalBanner}`} />
+            <img
+                alt="hieri"
+                src="./mutual-links/hieri.webp"
+                className={`${globalBanner}`}
+            />
             </a>
             <a href="https://rz7.dev">
                 <span className={`${noImageBanner}`}>
                     rz7.dev
                 </span>
             </a>
+        </div>
+        </div>
         </div>
     )
 }
