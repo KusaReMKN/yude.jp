@@ -13,19 +13,14 @@ import { useState, useEffect } from 'react';
 export default function App() {
   const [cardY, setCardY] = useState(0);
   const [contentY, setContentY] = useState(0);
-  
+
   const [cardOpacity, setCardOpacity] = useState(1.0);
-  
+
   const handleScroll = () => {
     const card = Math.max((window.innerHeight / 2) - window.scrollY, 100);
     setCardY(card);
 
-    const mutualsElm = document.getElementById("mutuals");
-    let mutualsY = 0;
-    if (mutualsElm) {
-      mutualsY += mutualsElm.scrollHeight;
-    }
-    setContentY(card + (window.innerHeight / 2) + mutualsY * 2);
+    setContentY(card + (window.innerHeight / 2) + 60 * 2);
 
     const cardElm = document.getElementById("card");
     const contentElm = document.getElementById("content");
@@ -45,11 +40,7 @@ export default function App() {
 
   useEffect(() => {
     handleScroll();
-    
-    const mutualElm = document.getElementById("mutuals");
-    if (mutualElm) {
-      window.scrollTo(0, mutualElm.scrollHeight)
-    }
+    window.scrollTo(0, 60)
 
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -61,18 +52,16 @@ export default function App() {
     <RecoilRoot>
       <ThemeProvider>
         <>
-          <div id="mutuals">
-            <Mutuals />
-          </div>
+          <Mutuals />
           <div>
-            <div className={`sticky h-screen absolute`} style={{ opacity: cardOpacity, marginTop: `${document.getElementById("mutuals")?.offsetHeight}px` }}>
+            <div className={`sticky h-screen`} style={{ opacity: cardOpacity, marginTop: `60px` }}>
               <div id="card" className="fixed py-5 -mt-20" style={{ top: `${cardY}px` }}>
                 <Card />
               </div>
             </div>
-              
+
             <div className="grid justify-items-center">
-            <div id="content" className="absolute dark:text-white sm:min-w-[565px]" style={{ top: `${contentY}px`}}>
+              <div id="content" className="absolute dark:text-white sm:min-w-[565px]" style={{ top: `${contentY}px` }}>
                 <div className="grid grid-container md:grid-cols-5 gap-2 min-h-[70vh] w-3xl">
                   <div className="hidden md:block md:col-span-1">
                     <VerticalMenu />
@@ -87,7 +76,7 @@ export default function App() {
 
                 <div className="mb-5 mt-5" id="test">
                   <Footer />
-                </div> 
+                </div>
               </div>
             </div>
           </div>
