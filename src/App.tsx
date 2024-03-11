@@ -77,7 +77,7 @@ export default function App() {
                   <div className="hidden md:block md:col-span-1">
                     <VerticalMenu />
                   </div>
-                  <div className="block md:hidden">
+                  <div className="sticky top-5 md:hidden">
                     <HorizontalMenu />
                   </div>
                   <div className="px-5 md:col-span-4 md:px-0">

@@ -140,7 +140,7 @@ export default function Chat() {
                 </button>
             </div>
 
-            <div className="overflow-auto max-h-96 mt-5 rounded-lg max-w-xl">
+            <div className="overflow-auto h-96 mt-5 rounded-lg max-w-xl">
             {
                 messages &&
                 messages.map((message, index) => {

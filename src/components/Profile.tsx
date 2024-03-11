@@ -9,7 +9,7 @@ export default function Profile() {
 
             <ol className="relative border-s border-gray-700 left-2">                  
                 <li className="mb-2 ms-4">
-                    <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
+                    <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
                     <time className="mb-1 text-sm font-normal leading-none dark:text-gray-400">
                         2020 年 4 月 &ndash; 現在
                     </time>
