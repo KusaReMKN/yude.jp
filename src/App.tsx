@@ -4,9 +4,11 @@ import Mutuals from "./components/Mutuals"
 import Card from "./components/Card"
 import VerticalMenu from "./components/VerticalMenu"
 import HorizontalMenu from "./components/HorizontalMenu"
+import LanguageMenu from "./components/LanguageMenu"
 import ContentRenderer from "./components/ContentRenderer"
 import Footer from "./components/Footer"
 import { ThemeProvider, ThemeSwitcher } from "./components/Theme"
+
 
 import { useState, useEffect } from 'react';
 
@@ -82,6 +84,7 @@ export default function App() {
           </div>
           <div className="fixed top-5 right-5 text-3xl dark:text-white">
             <ThemeSwitcher />
+            <LanguageMenu />
           </div>
         </>
       </ThemeProvider>

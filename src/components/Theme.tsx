@@ -37,15 +37,14 @@ export const ThemeSwitcher = () => {
     return (
         <button
             type="button"
-            className="btn btn-secondary drop-shadow-md"
+            className="btn btn-secondary drop-shadow-md mr-3"
             onClick={toggleTheme}
             aria-label="テーマの切り替え"
         >
             {theme === "light" ? (
-                <FontAwesomeIcon icon={faMoon} />
+                "🌙"
             ) : (
-                <FontAwesomeIcon icon={faSun} />
-            )}
+                "🌞")}
         </button>
     )
 }

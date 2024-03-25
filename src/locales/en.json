@@ -1,0 +1,33 @@
+{
+    "translation": {
+        "profile": "Profile",
+        "links": "Links",
+        "public_keys": "Public keys",
+        "services": "Services",
+        "chat": "Chat",
+        "present": "Present",
+        "affiliation": "Affiliation",
+        "hcu": "Hiroshima City University",
+        "faculty": "Department of Computer and Network Engineering, Faculty of Information Sciences",
+        "degree": "Bachelor of Information Engineering",
+        "past_activities": "Past activities",
+        "basic_info": "Basic information",
+        "2001/11/19": "November 19th, 2001",
+        "birth": "({{age}} y/o)",
+        "location": "Chiba, Japan",
+        "licenses": "Qualifications, Licenses",
+        "year/month": "{{month}}, {{year}}",
+        "fingerprint": "Key fingerprint",
+        "instance": "instance",
+        "server": "server",
+        "service_status": "Service status",
+        "multiplayer": "multiplayer",
+        "connectivity": "Connectivity",
+        "sent": "Successfully sent.",
+        "message_leave": "Do you have any last words?",
+        "sent_error": "Error occured while sending your message: ",
+        "name": "Name",
+        "body": "Message body",
+        "send": "Send"
+    }
+}

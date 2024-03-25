@@ -1,0 +1,33 @@
+{
+    "translation": {
+        "profile": "关于我",
+        "links": "超级链接",
+        "public_keys": "公钥",
+        "services": "服务",
+        "chat": "聊天",
+        "affiliation": "所属",
+        "present": "现在",
+        "hcu": "广岛市立大学",
+        "faculty": "情报科学部 信息工程系",
+        "degree": "学士（信息工程）",
+        "past_activities": "过去的活动",
+        "basic_info": "基本信息",
+        "2001/11/19": "2001 年 11 月 19 日",
+        "birth": "出生 ({{age}} 岁)",
+        "location": "日本, 千叶县",
+        "licenses": "资格, 执照",
+        "year/month": "{{year}} 年 {{month}} 月",
+        "fingerprint": "钥匙指纹",
+        "instance": "实例",
+        "server": "服务器",
+        "service_status": "服务状态",
+        "multiplayer": "多人服务器",
+        "connectivity": "连接性",
+        "sent": "发送.",
+        "message_leave": "你想留下什么?",
+        "sent_error": "发送时出现问题: ",
+        "name": "句柄名称",
+        "body": "文本",
+        "send": "发送"
+    }
+}
