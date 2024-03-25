@@ -1,7 +1,5 @@
 import { atom, useRecoilState, useSetRecoilState } from "recoil";
 import { useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 
 export type Theme = "light" | "dark";
 

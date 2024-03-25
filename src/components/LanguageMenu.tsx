@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 export default function LanguageMenu() {
-    const { t, i18n: { changeLanguage, language } } = useTranslation();
+    const { i18n: { changeLanguage, language } } = useTranslation();
 
     return (
         <>
