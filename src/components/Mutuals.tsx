@@ -116,7 +116,7 @@ export default function Mutuals() {
                     donabe8898.dev
                 </span>
             </a>
-            <a href="https://hieri.vercel.app">
+            <a href="https://hieri.net">
                 <img
                     alt="hieri"
                     src="./mutual-links/hieri.webp"
