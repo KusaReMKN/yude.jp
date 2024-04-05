@@ -28,6 +28,7 @@
         "sent_error": "Error occured while sending your message: ",
         "name": "Name",
         "body": "Message body",
-        "send": "Send"
+        "send": "Send",
+        "isp": "ISP"
     }
 }

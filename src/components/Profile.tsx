@@ -28,6 +28,17 @@ export default function Profile() {
                     <li className="mb-2 ms-4">
                         <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
                         <time className="mb-1 text-sm font-normal leading-none dark:text-gray-400">
+                            {t("year/month", { year: 2024, month: localizedMonth(4) })} &ndash;
+                        </time>
+                        <h3 className="text-lg font-semibold dark:text-white">
+                            <a href="https://www.hiroshima-cu.ac.jp">
+                                {t("isp")}
+                            </a>
+                        </h3>
+                    </li>
+                    <li className="mb-2 ms-4">
+                        <div className="absolute w-3 h-3 rounded-full mt-1.5 -start-1.5 border border-gray-900 bg-gray-700"></div>
+                        <time className="mb-1 text-sm font-normal leading-none dark:text-gray-400">
                             {t("year/month", { year: 2020, month: localizedMonth(4) })} &ndash; {t("year/month", { year: 2024, month: localizedMonth(3) })}
                         </time>
                         <h3 className="text-lg font-semibold dark:text-white">
