@@ -80,7 +80,7 @@ export default function Profile() {
                 <h2 className="text-xl font-semibold dark:text-gray-200 mt-2 mb-1 ml-1">{t("licenses")}</h2>
                 <ul className="max-w-md space-y-1 ml-5 list-disc list-inside dark:text-gray-400">
                     <li>
-                        プロジェクトセカイ カラフルステージ！ feat. 初音ミク フルコンボ楽曲 (MASTER) 200 曲 ({t("year/month", { year: 2023, month: localizedMonth(6) })})
+                        プロジェクトセカイ カラフルステージ！ feat. 初音ミク フルコンボ楽曲 (MASTER) 300 曲 ({t("year/month", { year: 2024, month: localizedMonth(4) })})
                     </li>
                     <li>
                         IPA 基本情報技術者 ({t("year/month", { year: 2022, month: localizedMonth(4) })})
