@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { useTranslation } from "react-i18next";
 import Ja from '../contents/services.ja.mdx';
 import En from '../contents/services.en.mdx';
