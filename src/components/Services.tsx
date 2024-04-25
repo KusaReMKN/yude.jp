@@ -9,7 +9,7 @@ export default function Services() {
 
     return (
         <div
-            className="prose dark:prose-invert prose-li:mt-0 prose-li:mb-0 prose-h2:mt-4 prose-h2:mb-0 prose-code:before:content-[''] prose-code:after:content-[''] prose-ul:mt-0 prose-ul:mb-0"
+            className="prose dark:prose-invert prose-li:mt-0 prose-li:mb-0 prose-h2:mt-4 prose-h2:mb-0 prose-code:before:content-[''] prose-code:after:content-[''] prose-ul:mt-0 prose-ul:mb-0 prose-code:break-all max-w-lg"
             style={{
                 marginBottom: `-5px`
             }}
