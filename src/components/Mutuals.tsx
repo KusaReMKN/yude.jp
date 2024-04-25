@@ -8,7 +8,6 @@ export default function Mutuals() {
         <Marquee
             pauseOnHover={true}
             speed={100}
-            className="-z-10"
         >
             <a href="https://arkw.net">
                 <img
