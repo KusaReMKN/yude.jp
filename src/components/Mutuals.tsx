@@ -83,8 +83,8 @@ export default function Mutuals() {
             </a>
             <a href="https://nullnyat.nca10.moe/">
                 <img
-                    alt="nullcat"
-                    src="./mutual-links/nullcat.webp"
+                    alt="nullnyat"
+                    src="./mutual-links/nullnyat.webp"
                     className={`${globalBanner}`}
                     width={234}
                     height={60}
