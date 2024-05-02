@@ -81,7 +81,7 @@ export default function Mutuals() {
                     height={60}
                 />
             </a>
-            <a href="https://nullc.at/">
+            <a href="https://nullnyat.nca10.moe/">
                 <img
                     alt="nullcat"
                     src="./mutual-links/nullcat.webp"
