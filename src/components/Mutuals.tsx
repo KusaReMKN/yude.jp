@@ -90,6 +90,15 @@ export default function Mutuals() {
                     height={60}
                 />
             </a>
+            <a href="https://powerfulfamily.net/">
+                <img
+                    alt="powerfulfamily"
+                    src="./mutual-links/powerfulfamily.webp"
+                    className={`${globalBanner}`}
+                    width={234}
+                    height={60}
+                />
+            </a>
             <a href="https://zopfco.de/">
                 <span className={`${noImageBanner}`}>
                     Zopfcode
