@@ -1,8 +1,8 @@
 import Marquee from "react-fast-marquee";
 
 export default function Mutuals() {
-    const noImageBanner = `border border-4 border-fuchsia-300 bg-slate-200 pt-1.5 px-3 text-black h-12 font-bold block min-w-56 text-center text-2xl font-serif`
-    const globalBanner = `h-12 inline-block`
+    const noImageBanner = `border border-4 border-fuchsia-300 bg-slate-200 pt-1.5 px-3 text-black h-12 font-bold block min-w-32 text-center text-2xl font-serif`
+    const globalBanner = `h-12 w-auto inline-block`
 
     return (
         <Marquee
