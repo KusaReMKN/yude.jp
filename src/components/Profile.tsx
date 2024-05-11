@@ -31,7 +31,7 @@ export default function Profile() {
                             {t("year/month", { year: 2024, month: localizedMonth(4) })} &ndash;
                         </time>
                         <h3 className="text-lg font-semibold dark:text-white">
-                            <a href="https://www.hiroshima-cu.ac.jp">
+                            <a href="https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E3%83%97%E3%83%AD%E3%83%90%E3%82%A4%E3%83%80">
                                 {t("isp")}
                             </a>
                         </h3>
